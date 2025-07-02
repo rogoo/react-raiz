@@ -1,0 +1,38 @@
+.float-left {
+  position: absolute;
+  float: left;
+  left: 1px;
+  top: 0px;
+}
+
+a {
+  cursor: pointer;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.home-img {
+  width: 30px;
+  height: 30px;
+  margin: 2px;
+}
+
+.basediv {
+  width: 85%;
+  background-color: white;
+}
+
+body {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  background-color: #f8f9fa;
+}
+
+.obrigatorio {
+  color: red;
+  font-weight: bolder;
+}
