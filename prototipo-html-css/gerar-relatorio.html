@@ -35,11 +35,19 @@
           </div>
           <ul class="nav nav-pills">
             <li>
-              <a href="pesquisa-livro.html" class="nav-link">Livro (crud)</a>
+              <a href="pesquisa-livro.html" class="nav-link">Livro</a>
             </li>
             <li>
-              <a href="pesquisa-imagem.html" class="nav-link active"
-                >Lista Imagens</a
+              <a href="pesquisa-autor.html" class="nav-link">Autor</a>
+            </li>
+            <li>
+              <a href="pesquisa-autor-fotos.html" class="nav-link"
+                >Fotos Author</a
+              >
+            </li>
+            <li>
+              <a href="gerar-relatorio.html" class="nav-link active"
+                >Exportar Relatorio</a
               >
             </li>
             <li><a href="#" class="nav-link disabled">About</a></li>
@@ -59,31 +67,35 @@
         </header>
       </div>
       <div id="idContent" class="container">
-        <h4 class="text-start my-4"><u>Pesquisa Imagem</u></h4>
+        <h4 class="text-start my-4"><u>Gerar Relatórios</u></h4>
         <form novalidate>
           <div class="row text-start g-3">
-            <div class="col-12">
-              <label for="idNomeLivro" class="form-label"
-                >Nome Livro <span class="obrigatorio">*</span></label
+            <div class="col-7">
+              <label for="idTipoRelatorio" class="form-label"
+                >Relatório <span class="obrigatorio">*</span></label
               >
-              <div class="input-group">
-                <div class="col-6">
-                  <input type="text" class="form-control" id="idNomeLivro" />
-                </div>
-                <div class="col-4">
-                  <button type="button" class="btn btn-primary">
-                    Pesquisa
-                  </button>
-                </div>
-              </div>
+              <select
+                id="idTipoRelatorio"
+                class="form-select"
+                aria-label="Tipo de Relatório para exportação"
+              >
+                <option selected>selecione</option>
+                <option>Livros</option>
+                <option>Autores</option>
+              </select>
             </div>
-          </div>
-          <hr class="my-4" />
-          <div class="text-center">
-            <img src="book2.PNG" class="mb-5" alt="book 2" />
+            <div class="col-5 position-relative">
+              <button
+                type="button"
+                class="btn btn-primary position-absolute bottom-0 start-0"
+              >
+                Gerar
+              </button>
+            </div>
           </div>
         </form>
       </div>
+      <br />
       <div id="idFooter" class="container border-top">
         <footer class="py-3">
           <p class="text-center text-body-secondary">

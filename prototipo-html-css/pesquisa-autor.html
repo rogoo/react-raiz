@@ -35,10 +35,10 @@
           </div>
           <ul class="nav nav-pills">
             <li>
-              <a href="pesquisa-livro.html" class="nav-link active">Livro</a>
+              <a href="pesquisa-livro.html" class="nav-link">Livro</a>
             </li>
             <li>
-              <a href="pesquisa-autor.html" class="nav-link">Autor</a>
+              <a href="pesquisa-autor.html" class="nav-link active">Autor</a>
             </li>
             <li>
               <a href="pesquisa-autor-fotos.html" class="nav-link"
@@ -67,106 +67,95 @@
         </header>
       </div>
       <div id="idContent" class="container">
-        <h4 class="text-start my-4"><u>Pesquisa Livro</u></h4>
+        <h4 class="text-start my-4"><u>Pesquisa Autor</u></h4>
         <form novalidate>
           <div class="row text-start g-3">
-            <div class="col-6">
+            <div class="col-8">
               <label for="idNomeLivro" class="form-label"
-                >Nome Livro <span class="obrigatorio">*</span></label
+                >Nome<span class="obrigatorio">*</span></label
               >
               <input type="text" class="form-control" id="idNomeLivro" />
             </div>
-            <div class="col-6">
-              <label for="idAuthor" class="form-label">Nome Autor</label>
-              <input type="text" class="form-control" id="idAuthor" />
-            </div>
-            <div class="col-6">
-              <label for="idSexoAuthor" class="form-label">Sexo</label>
-              <select class="form-select" id="idSexoAuthor">
-                <option>Selecione</option>
-                <option>Masculino</option>
-                <option>Feminino</option>
-                <option>Outro</option>
-                <option>Prefiro não responder</option>
-              </select>
-            </div>
-            <div class="col-6">
-              <label for="idDataLivro" class="form-label">Data Livro</label>
-              <input
-                type="text"
-                class="form-control"
-                id="idDataLivro"
-                placeholder="dd/mm/yyyy"
-              />
-            </div>
-            <div class="col-6">
-              <label for="idPreco" class="form-label">Preço</label>
-              <div class="input-group">
-                <span class="input-group-text">R$</span>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="idPreco"
-                  placeholder="0.00"
-                />
-              </div>
-            </div>
-            <div class="col-6">
-              <label for="idObservacao" class="form-label">Observações</label>
-              <input type="text" class="form-control" id="idObservacao" />
-            </div>
-            <div class="col-12 form-check form-switch">
-              <br /><label for="idPossuiPromocao" class="form-label"
-                >Possui Promoção?</label
-              >
-              <input
-                class="form-check-input"
-                type="checkbox"
-                id="idPossuiPromocao"
-                value=""
-                aria-label="..."
-              />
-            </div>
           </div>
-          <button
-            class="btn btn-primary mb-3"
-            type="button"
-            onclick="location.href='manter-livro.html';"
-          >
-            Pesquisar
-          </button>
-          <button class="btn btn-warning mb-3" type="submit">Limpar</button>
-          <button class="btn btn-success mb-3" type="submit">Novo</button>
         </form>
+        <div class="text-start">
+          <button class="btn btn-success mt-3" type="submit">Novo</button>
+        </div>
         <table class="table mt-5">
           <thead>
             <tr>
-              <th scope="col">Livro</th>
-              <th scope="col">Author</th>
+              <th scope="col">Nome</th>
               <th scope="col">Sexo</th>
-              <th scope="col">Data Livro</th>
-              <th scope="col">Preço</th>
-              <th scope="col">Possui Promoção</th>
+              <th scope="col">Endereço</th>
+              <th scope="col">Data Nascimento</th>
+              <th scope="col">altura</th>
+              <th scope="col">Tem Fihos?</th>
+              <th scope="col">CPF</th>
               <th scope="col">Ação</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <th>Romeu e Julieta</th>
-              <td>Shakespeare</td>
+              <th>Romeu Rocha Silveira Plantão</th>
               <td>Masculino</td>
-              <td>12/12/2025</td>
-              <td>R$ 34,50</td>
+              <td>
+                Cond. Estancia jd botanico<br />conjunto J, cs 87<br />CEP:
+                71666-123
+              </td>
+              <td>11/11/2011</td>
+              <td>1,50</td>
               <td>Sim</td>
+              <td>999.888.777-66</td>
               <td>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
-                  onclick="location.href='manter-livro.html'"
                   fill="currentColor"
                   class="bi bi-pencil-fill cursor-pointer"
                   viewBox="0 0 16 16"
+                  onclick="location.href='manter-autor.html'"
+                  style="color: blue"
+                >
+                  <path
+                    d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-trash-fill cursor-pointer"
+                  viewBox="0 0 16 16"
+                  style="color: red"
+                >
+                  <path
+                    d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"
+                  />
+                </svg>
+              </td>
+            </tr>
+            <tr>
+              <th>Taysana Rocha Blublu</th>
+              <td>Feminino</td>
+              <td>
+                Ed. Le Grand Orleans Tower<br />lote 09/10, bloco B, apt 1207<br />CEP:
+                72300-653
+              </td>
+              <td>05/09/2025</td>
+              <td>1,74</td>
+              <td>Não</td>
+              <td>111.333.222-44</td>
+              <td>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-pencil-fill cursor-pointer"
+                  viewBox="0 0 16 16"
+                  onclick="location.href='manter-autor.html'"
                   style="color: blue"
                 >
                   <path

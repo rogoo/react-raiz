@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Noixxxx</title>
+    <title>Noixxxx - Manter Livro</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -30,11 +30,7 @@
               href="index.html"
               class="d-inline-flex link-body-emphasis text-decoration-none"
             >
-              <img
-                src="home.gif"
-                onclick="location.href='login.html'"
-                class="home-img"
-              />
+              <img src="home.gif" class="home-img" />
             </a>
           </div>
           <ul class="nav nav-pills">
@@ -45,7 +41,7 @@
               <a href="pesquisa-autor.html" class="nav-link">Autor</a>
             </li>
             <li>
-              <a href="pesquisa-autor-fotos.html" class="nav-link"
+              <a href="pesquisa-autor-fotos.html" class="nav-link active"
                 >Fotos Author</a
               >
             </li>
@@ -71,11 +67,25 @@
         </header>
       </div>
       <div id="idContent" class="container">
-        <p class="text-center">
-          Um projeto para se divertir com algumas tecnologias Front, executando
-          funções básicas do desenvolvimento de um software.
-        </p>
-        <p class="text-center">Vamos que vamos...</p>
+        <h4 class="text-start my-4"><u>Pesquisa Imagem</u></h4>
+        <form novalidate>
+          <div class="row text-start g-3">
+            <div class="col-12">
+              <label for="idNomeLivro" class="form-label"
+                >Nome Livro <span class="obrigatorio">*</span></label
+              >
+              <div class="input-group">
+                <div class="col-6">
+                  <input type="text" class="form-control" id="idNomeLivro" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="my-4" />
+          <div class="text-center">
+            <img src="book2.PNG" class="mb-5" alt="book 2" />
+          </div>
+        </form>
       </div>
       <div id="idFooter" class="container border-top">
         <footer class="py-3">
