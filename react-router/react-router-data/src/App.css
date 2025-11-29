@@ -1,0 +1,54 @@
+:root {
+  --bg-body: black;
+  --bg-navbar: rgb(27, 27, 201);
+  --bg-fundo: white;
+}
+
+body {
+  margin: 0;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#root {
+  background-color: var(--bg-body);
+  min-height: 100dvh;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  background-color: var(--bg-navbar);
+}
+
+.main-content {
+  padding: 1em 2em;
+}
+
+.fundo {
+  background-color: var(--bg-fundo);
+  color: black;
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bolder;
+  margin-right: 0.7rem;
+}
+
+a.active {
+  color: burlywood;
+}
+
+a.pending {
+  animate: pulse 1s infinite;
+}
