@@ -1,6 +1,6 @@
 ## React Router utilizando Data mode
 
-Um projeto bemsimples utilizando o **modo Data** do **react router**.
+Um projeto bem simples utilizando o **modo Data** do **react router**.
 
 Para projetos SPA bem simples ou que serão utilizados em uma intranet - projeto de internet não é muito legal pois vai perder SEO (pra fazer SSR vai ter que adicionar configuração extra).
 
