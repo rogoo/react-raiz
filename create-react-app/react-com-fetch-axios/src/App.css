@@ -1,0 +1,140 @@
+:root {
+  --bg-body: #ffe8c6;
+  --bg-navbar: rgb(27, 27, 201);
+  --bg-fundo: white;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#root {
+  background-color: var(--bg-body);
+  min-height: 100dvh;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  background-color: var(--bg-navbar);
+}
+
+.main-content {
+  padding: 1em 2em;
+}
+
+.form-container {
+  display: flex;
+  gap: 1em;
+}
+
+.menu-api {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  padding-left: 1em;
+  float: left;
+}
+
+.fundo {
+  background-color: var(--bg-fundo);
+  color: black;
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bolder;
+  margin-right: 0.7rem;
+}
+
+a.active {
+  color: burlywood;
+}
+
+input,
+label {
+  display: block;
+}
+
+button {
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.btt-blue {
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 0.5em;
+  cursor: pointer;
+  color: white;
+  background-color: blue;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+caption {
+  padding: 1em;
+  font-style: italic;
+  letter-spacing: 0.3em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+table {
+  table-layout: fixed;
+  width: 98%;
+  margin: 10px auto;
+  border-collapse: collapse;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #e4d8d8;
+}
+
+td {
+  text-align: center;
+}
+
+.centralizaTextoBold {
+  text-align: center;
+  margin-top: 3em;
+}
+
+.ma-1 {
+  margin: 0.3em;
+}
+
+.msg-erro {
+  background-color: rgb(211, 180, 180);
+  border: 1px red solid;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0.4em;
+  margin: 0.8em 0;
+}
+
+.msg-sucesso {
+  background-color: rgb(106, 181, 107);
+  border: 1px green solid;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0.4em;
+  margin: 0.8em 0;
+}
