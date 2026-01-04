@@ -7,7 +7,10 @@ Para projetos SPA bem simples ou que serão utilizados em uma intranet - projeto
 **Importante:** Neste modo não existe typesafety, e utilizar SSR vai requerer configuração própria.
 
 ### Configuração
-
+Instale a lib.
+```
+npm install react-router
+```
 Componente src/routes define as rotas. O componente principal (index.tsx) precisou ser alterado para utilizar o AppRoutes.
 
 No componente src/App foi utilizado **_Outlet_** para incluir as rotas, que estão mapeadas no children das rotas.
