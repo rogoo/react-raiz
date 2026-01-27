@@ -26,6 +26,6 @@ Cositas legais com o Data Mode são:
 - **loader** - carrega dados antes que os componentes sejam renderizados
 - **lazy** - lazy loading
 
-Vou arranjar um tempito e implementar furutamente cada uma dessas características.
+Vou arranjar um tempito e implementar furutamente cada uma dessas características.bb
 
 Isso é. Vamos que vamos galerinhaaaaaaaa
