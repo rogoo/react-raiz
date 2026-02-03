@@ -15,6 +15,7 @@ const Header = () => {
       <NavLink to="/form-usando-formdata-sem-zod">
         Form FormData sem Zod
       </NavLink>
+      |
       <NavLink to="/form-usando-formdata-com-zod">
         Form FormData com Zod
       </NavLink>
