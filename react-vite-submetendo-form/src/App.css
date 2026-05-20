@@ -29,6 +29,6 @@ a.active {
 }
 
 a:hover {
-  color: black;
+  color: rgb(255, 0, 0);
   text-decoration: underline;
 }

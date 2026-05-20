@@ -30,7 +30,13 @@ const FormUsandoFormDataComZod = () => {
         telefone: resultComZod.data.telefone,
         idade: resultComZod.data.idade,
       };
+      console.log("SUCESSO");
       console.log("Props typed object:", propsValues);
+    } else {
+      console.error(
+        "Erros de validação: \n" +
+          resultComZod.error.issues.map((issue) => issue.message).join("\n"),
+      );
     }
   };
 

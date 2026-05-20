@@ -1,5 +1,7 @@
 ## Submetendo Form
 
-Formas diferentes obter informação do form.
+Aqui temos algumas formas diferentes de obter informação do formulário (form), para submeter.
 
-**_Controlled_** (usando a propriedade _'value'_), **_Uncontrolled_** (sem propriedade _'value'_), usando o **_FormData_** (JS desde 2010) <u>com e sem Zod</u> (lib de validação de schema de tipagem que "ca"funciona bem com Typescript).
+- **_Uncontrolled_** - com o hook useRef (sem a propriedade _'value'_ do input).
+- **_Controlled_** - com o hook useState (usando a propriedade _'value'_ do input)
+- **_FormData_** - interface do JS de key/values do formulário. Foi criado dois forms, com e sem a biblioteca Zod (lib de validação de schema de tipagem com Typescript).
