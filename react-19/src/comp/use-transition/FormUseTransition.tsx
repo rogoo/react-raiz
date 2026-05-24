@@ -2,10 +2,12 @@ import { useState } from "react";
 import AbaComUseTransition from "./AbaComUseTransition";
 import AbaSemUseTransition from "./AbaSemUseTransition";
 
-enum Aba {
-  SemUseTransition,
-  ComUseTransition,
-}
+const Aba = {
+  SemUseTransition: "SemUseTransition",
+  ComUseTransition: "ComUseTransition",
+} as const;
+
+type Aba = (typeof Aba)[keyof typeof Aba];
 
 const FormUseTransition = () => {
   const [aba, setAba] = useState<Aba>(Aba.SemUseTransition);

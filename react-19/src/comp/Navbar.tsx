@@ -6,6 +6,9 @@ const Navbar = () => {
       <NavLink to="/" style={{ marginRight: ".5rem" }}>
         useTransition
       </NavLink>
+      <NavLink to="/test-use-action-state" style={{ marginRight: ".5rem" }}>
+        useActionState
+      </NavLink>
     </nav>
   );
 };

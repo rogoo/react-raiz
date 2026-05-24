@@ -13,10 +13,40 @@ nav {
   justify-content: center;
   gap: 1rem;
   background-color: burlywood;
+  padding: 1rem;
+}
+
+.main {
+  padding: 1rem;
 }
 
 a {
   text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: rgb(255, 153, 0);
   color: black;
   font-weight: bold;
+}
+
+.gray {
+  background-color: rgb(128, 128, 128);
+}
+
+.redBorder {
+  border: 1px solid red;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
 }
