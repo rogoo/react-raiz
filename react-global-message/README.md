@@ -1,7 +1,7 @@
 # Importante
 O conteúdo abaixo foi criado pela minha querida amiga IA (Copilot). Achei muito bom e mantive em inglês mesmo (legal o note no final tipo "tem mensagem em portuguese no código"... haha).
 
-De qualquer forma, quis fazer uns vários testes com mensagens globais sem renderizar os components, então dá-lhe **useMemo**... Te amoooo.
+De qualquer forma, quis fazer uns vários testes com mensagens globais sem renderizar os components, então dá-lhe **useMemo**... Te amoooo. Com exceção da lib sonner (com Toaster).
 
 Vamos que vamossssss...
 
