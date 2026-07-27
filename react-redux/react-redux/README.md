@@ -1,0 +1,27 @@
+# React Redux Todo
+
+App simples usando redux, com `React 19`, `TypeScript`, and `Redux Toolkit`.
+
+Se tiver algum erro relacionado a dados, nunca esqueça de ir na aba Redux devtools.
+![Chrome Redux DevTools debug](chrome_redux_debug.jpg)
+
+## Tech Stack
+
+- React 19 + TypeScript
+- Redux Toolkit + React Redux
+- Vite 8 (Rolldown)
+- Oxlint
+
+## Getting Started
+
+```bash
+npm install ou (npm i)
+npm run dev (para apagar cache `--force`)
+```
+
+## Project Structure
+
+```
+src/
+  components/todo/   # TodoForm, TodoLista, TodoItem
+```
