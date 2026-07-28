@@ -2,7 +2,9 @@
 
 App simples usando redux, com `React 19`, `TypeScript`, and `Redux Toolkit`.
 
-Se tiver algum erro relacionado a dados, nunca esqueça de ir na aba Redux devtools.
+## Redux DevTools
+Se tiver algum erro relacionado a dados, e quiser debugar podend reverter o status para um anterior, partiu.
+
 ![Chrome Redux DevTools debug](chrome_redux_debug.jpg)
 
 ## Log Middleware
