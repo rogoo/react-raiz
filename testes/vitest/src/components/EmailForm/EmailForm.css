@@ -1,0 +1,63 @@
+.email-form h1 {
+  margin-bottom: 1rem;
+}
+
+.email-form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 560px;
+  padding: var(--form-padding);
+  border-radius: 8px;
+  background: var(--form-bg);
+}
+
+.email-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.email-form__field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--form-text);
+}
+
+.email-form__field input,
+.email-form__field select,
+.email-form__field textarea {
+  padding: 0.55rem 0.7rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-strong);
+  background: var(--input-bg);
+  color: var(--text);
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.email-form__field input.input--invalid,
+.email-form__field select.input--invalid,
+.email-form__field textarea.input--invalid {
+  border-color: var(--danger);
+  outline-color: var(--danger);
+}
+
+.email-form__error {
+  font-size: 0.8rem;
+  color: var(--form-error);
+}
+
+.email-form__actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.email-form__feedback {
+  color: var(--success-text);
+}
+
+.email-form__failure {
+  color: var(--danger-text);
+}

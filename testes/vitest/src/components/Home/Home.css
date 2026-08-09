@@ -1,0 +1,27 @@
+.home__title {
+  font-size: 3rem;
+  margin: 0 0 1.5rem;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.home__lead {
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: var(--text);
+}
+
+.home__text {
+  line-height: 1.75;
+  color: var(--text-soft);
+}
+
+.home__signature {
+  margin-top: 3rem;
+  text-align: right;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+}
