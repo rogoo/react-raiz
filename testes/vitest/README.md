@@ -1,6 +1,4 @@
-# Test React usando Vitest
-Bastante parecido com Jest (possui mesmo métodos), mas achei melhor não só na rapidez mas no setup que facilita muito o trabalho.
+# Teste Usando Vitest
+Projeto tanto manual (não fix tudo) como usando IA.
 
-Não fiz teste de tudo, tudo... sem tempo e preguiçinha. Mas fiz do Email.test.tsx, que tem mock com api.
-
-Isso ai... VALEUUUUUUU... noix
+Aprende-se muito olhando código dos outros, e com a IA não é diferente. Gostei muito de várais coisas feitas pela IA. (basta comparar o arquivo EmailForm.test.tsx em ambos projetos)

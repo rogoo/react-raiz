@@ -1,0 +1,187 @@
+:root,
+:root[data-theme='dark'] {
+  --bg: #0f1116;
+  --surface: #14161c;
+  --surface-2: #1f2430;
+  --input-bg: #1a1e27;
+  --border: #2a2e3a;
+  --border-strong: #3a4152;
+  --text: #e6e9f2;
+  --text-strong: #f3f4f6;
+  --text-soft: #c8cede;
+  --text-muted: #8b93a7;
+  --placeholder: #6b7285;
+  --accent: #ffd166;
+  --accent-2: #06d6a0;
+  --danger: #e5484d;
+  --danger-hover: #cf3b40;
+  --danger-text: #ff6b6f;
+  --success-text: #06d6a0;
+  --button-bg: #2a3040;
+  --button-hover: #353d51;
+  --header-bg: #244250;
+  --form-bg: #4a6f80;
+  --form-padding: 1.25rem;
+  --form-text: #f2f5f8;
+  --form-error: #ffd0d2;
+  --filter-bg: #4a6f80;
+  --filter-border: transparent;
+
+  color-scheme: dark;
+}
+
+:root[data-theme='light'] {
+  --bg: #f6f7fb;
+  --surface: #ffffff;
+  --surface-2: #eceff6;
+  --input-bg: #ffffff;
+  --border: #dfe3ec;
+  --border-strong: #c3c9d8;
+  --text: #2b3040;
+  --text-strong: #10131c;
+  --text-soft: #3d4457;
+  --text-muted: #6b7285;
+  --placeholder: #9aa1b4;
+  --accent: #b06f0d;
+  --accent-2: #0a8f6e;
+  --danger: #d13438;
+  --danger-hover: #b52c30;
+  --danger-text: #c0272b;
+  --success-text: #0a8f6e;
+  --button-bg: #e7eaf2;
+  --button-hover: #dbe0ec;
+  --header-bg: var(--surface);
+  --form-bg: transparent;
+  --form-padding: 0;
+  --form-text: var(--text-soft);
+  --form-error: var(--danger-text);
+  --filter-bg: var(--surface);
+  --filter-border: var(--border);
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) {
+    --bg: #f6f7fb;
+    --surface: #ffffff;
+    --surface-2: #eceff6;
+    --input-bg: #ffffff;
+    --border: #dfe3ec;
+    --border-strong: #c3c9d8;
+    --text: #2b3040;
+    --text-strong: #10131c;
+    --text-soft: #3d4457;
+    --text-muted: #6b7285;
+    --placeholder: #9aa1b4;
+    --accent: #b06f0d;
+    --accent-2: #0a8f6e;
+    --danger: #d13438;
+    --danger-text: #c0272b;
+    --success-text: #0a8f6e;
+    --button-bg: #e7eaf2;
+    --button-hover: #dbe0ec;
+    --form-bg: transparent;
+    --form-padding: 0;
+    --form-text: var(--text-soft);
+    --form-error: var(--danger-text);
+    --filter-bg: var(--surface);
+    --filter-border: var(--border);
+
+    color-scheme: light;
+  }
+}
+
+:root {
+  /* Shared by both themes */
+  --new-button-bg: #8cc9e7;
+  --new-button-bg-hover: #74bcdf;
+  --new-button-text: #000000;
+  --icon-edit: #2f8fd8;
+  --icon-delete: #e0393d;
+  --danger-button-bg: #fd8c8f;
+  --danger-button-bg-hover: #f9767a;
+  --danger-button-text: #000000;
+
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  color: var(--text);
+  background-color: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2 {
+  color: var(--text-strong);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+a {
+  color: var(--accent);
+}
+
+button {
+  padding: 0.55rem 1.1rem;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background: var(--button-bg);
+  color: var(--text);
+  font-size: 0.95rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+button:hover:not(:disabled) {
+  background: var(--button-hover);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+button.button--ghost {
+  background: transparent;
+  border-color: var(--border-strong);
+}
+
+button.button--danger {
+  background: var(--danger-button-bg);
+  border-color: var(--danger-button-bg);
+  color: var(--danger-button-text);
+  font-weight: 700;
+}
+
+button.button--danger:hover:not(:disabled) {
+  background: var(--danger-button-bg-hover);
+  border-color: var(--danger-button-bg-hover);
+}
+
+code {
+  font-family: ui-monospace, Consolas, monospace;
+  background: var(--input-bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2px 6px;
+}

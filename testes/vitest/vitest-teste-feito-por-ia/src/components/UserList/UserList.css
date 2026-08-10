@@ -1,0 +1,113 @@
+.user-list__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.user-list__new {
+  flex-shrink: 0;
+  padding: 0.55rem 1.1rem;
+  border-radius: 6px;
+  background: var(--new-button-bg);
+  border: 1px solid var(--new-button-bg);
+  color: var(--new-button-text);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.user-list__new:hover {
+  background: var(--new-button-bg-hover);
+  border-color: var(--new-button-bg-hover);
+}
+
+.user-list__filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+  padding: 1rem;
+  border: 1px solid var(--filter-border);
+  border-radius: 8px;
+  background: var(--filter-bg);
+}
+
+.user-list__filter-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.user-list__filter-field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--form-text);
+}
+
+.user-list__filter-field input {
+  padding: 0.5rem 0.7rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-strong);
+  background: var(--input-bg);
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.user-list__filter-field input::placeholder {
+  color: var(--placeholder);
+}
+
+.user-list__filter-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.user-list__feedback {
+  color: var(--success-text);
+}
+
+.user-list__failure {
+  color: var(--danger-text);
+}
+
+.user-list__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-list__table th,
+.user-list__table td {
+  text-align: left;
+  padding: 0.5rem 0.6rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.user-list__row-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.user-list__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.15rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.user-list__icon:hover:not(:disabled) {
+  background: transparent;
+  opacity: 0.75;
+}
+
+.user-list__icon--edit {
+  color: var(--icon-edit);
+}
+
+.user-list__icon--delete {
+  color: var(--icon-delete);
+}
